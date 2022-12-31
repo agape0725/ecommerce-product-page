@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="main__container">
+
+    <header>
+      <div class="nav__header">
+        
+        <div class="nav">
+          
+          <div class="nav_left">
+            <ul>
+              <img class="sneakers-logo" src="images/logo.svg" alt="">
+              <li>Collections</li>
+              <li>Men</li>
+              <li>Women</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+
+          <div class="nav_right">
+            <div class="addtocart_navigation">
+
+
+              <div class="cart_icon_container">
+                <img class="cart-icon" src="images/icon-cart.svg" alt="">
+              </div>
+
+              <!-- Hidden Cart -->
+
+              <!-- Start -->
+
+              <div class="my_cart_container">
+
+                <div class="display_none">No product added to Cart</div>
+
+                <h1>My Cart</h1>
+
+                <div class="my_cart_div">
+
+                  <img class="addedtocart-product-img" src="" alt="">
+
+                  <div class="my_cart_result">
+                    
+                    <div class="addedtocart-final">
+
+                      <div class="addedtocart-product-title"></div>
+                      
+                      <div class="addedtocart-total">
+                        <div class="addedtocart-product-price"></div>
+                        <img class="addedtocart-multiplier" src="images/cross.png" alt="">
+                        <div class="addedtocart-quantity"></div>
+                        <div class="addedtocart-product-total-amount"></div>
+                      </div>
+
+                    </div>
+
+                    <img class="addedtocart-delete-icon" src="images/icon-delete.svg" alt="">
+                    
+                  </div>
+
+                  <button class="checkout-button">Checkout</button>
+
+                </div>
+               
+              </div>
+
+              <!-- end -->
+
+            </div>
+
+            <img class="avatar-image" src="images/image-avatar.png" alt="">
+          </div>
+          
+        </div>
+
+      </div>
+    </header>
+
+    <section>
+
+      <div class="column__section">
+        
+        <div class="col_left">
+
+          <img class="product-img main-img" src="images/image-product-1.jpg" alt="">
+          
+    
+          <div class="small_images_container">
+    
+            <img class="product-img small-img main-img--active" data-slide="1" src="images/image-product-1-thumbnail.jpg" alt="">
+            <img class="product-img small-img" data-slide="2" src="images/image-product-2-thumbnail.jpg" alt="">
+            <img class="product-img small-img" data-slide="3" src="images/image-product-3-thumbnail.jpg" alt="">
+            <img class="product-img small-img" data-slide="4" src="images/image-product-4-thumbnail.jpg" alt="">
+    
+          </div>
+    
+        </div>
+
+        <div class="col_right">
+
+          <h3>SNEAKER COMPANY</h3>
+          <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+
+          <p class="product-description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+
+          <div class="price_discount">
+
+            <div>
+              <h2 class="original-price">125</h2>
+            </div>
+
+            <div>
+              <p class="off-price">50%</p>
+            </div>
+
+          </div>
+
+          <div class="buttons">
+
+            <div class="btn quantity-button">
+              <img class="minus-icon" src="images/icon-minus.svg" alt="">
+              <div class="quantity">1</div>
+              <img class="plus-icon" src="images/icon-plus.svg" alt="">
+            </div>
+
+            <button class="btn addtocart-button">
+              <img src="images/grocery-store.png" alt="">
+              Add to cart
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <!-- Hidden in Screen -->
+
+      <div class="col_left--hidden">
+
+        <div class="main-img-div">
+
+          <img src="images/icon-close.svg" alt="" class="close-icon">
+      
+          <div class="prev-next-button">
+      
+            <img class="prev-button" src="images/icon-previous.svg" alt="">
+            <img class="next-button" src="images/icon-next.svg" alt="">
+              
+          </div>
+
+            <div class="main-dot-container">
+
+              <img class="product-img main-img main-img--hidden main-img--hidden--active" src="images/image-product-1.jpg" alt="">
+
+              <div class="dot"></div>
+
+            </div>
+            
+        </div>
+            
+        <div class="small_images_container small_images_container--hidden">
+      
+          <img class="product-img small-img small-img--hidden" data-slide="1" src="images/image-product-1-thumbnail.jpg" alt="">
+          <img class="product-img small-img small-img--hidden" data-slide="2" src="images/image-product-2-thumbnail.jpg" alt="">
+          <img class="product-img small-img small-img--hidden" data-slide="3" src="images/image-product-3-thumbnail.jpg" alt="">
+          <img class="product-img small-img small-img--hidden" data-slide="4" src="images/image-product-4-thumbnail.jpg" alt="">
+      
+        </div>
+    
+      </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+<!-- 
+     <div class="my_cart_div">
+
+     <img class="addedtocart-product-img" src="" alt="display im   
+     
+      <div class="my_cart_result">
+                    
+       <div class="addedtocart-final">
+
+        <div class="addedtocart-product-title">product title</div>
+                      
+        <div class="addedtocart-total">
+           <div class="addedtocart-product-price">product price</div>
+              
+          <div class="addedtocart-product-quantity">product quantity</div>
+        </div>
+
+      </div>
+
+      <img class="addedtocart-delete-icon" src="" alt="delete icon">
+
+    </div>
+
+  </div> -->
