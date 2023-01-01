@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
   <link rel="stylesheet" href="css/styles.css">
+  <title>E-Commerce Basic Project</title>
+
 </head>
+
 <body>
 
   <div class="main__container">
@@ -17,13 +19,29 @@
         <div class="nav">
           
           <div class="nav_left">
-            <ul>
-              <img class="sneakers-logo" src="images/logo.svg" alt="">
+
+            <img class="sneakers-logo" src="images/logo.svg" alt="">
+
+            <!-- Reveal in <= 600px Burger Icon -->
+
+            <!-- Start -->
+
+            <div class="burger_icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <!-- End -->
+            
+            <ul class="nav_list">
+           
               <li>Collections</li>
               <li>Men</li>
               <li>Women</li>
               <li>About</li>
               <li>Contact</li>
+              
             </ul>
           </div>
 
@@ -41,7 +59,7 @@
 
               <div class="my_cart_container">
 
-                <div class="display_none">No product added to Cart</div>
+                <div class="display_none">Your cart is empty.</div>
 
                 <h1>My Cart</h1>
 
@@ -106,6 +124,30 @@
     
         </div>
 
+        <!-- Reveal in <= 600px Burger Icon -->
+
+            <!-- Start -->
+
+            <div class="slider">
+              <img class="slide slide--1" src="images/image-product-1.jpg" alt="">
+              <img class="slide slide--2" src="images/image-product-2.jpg" alt="">
+              <img class="slide slide--3" src="images/image-product-3.jpg" alt="">
+              <img class="slide slide--4" src="images/image-product-4.jpg" alt="">
+
+              <div class="prev-next-button">
+      
+                <img class="prev-button-forquery" src="images/icon-previous.svg" alt="">
+                <img class="next-button-forquery" src="images/icon-next.svg" alt="">
+                  
+              </div>
+
+              <div class="dot-forquery"></div>
+              
+
+            </div>
+
+            <!-- End -->
+
         <div class="col_right">
 
           <h3>SNEAKER COMPANY</h3>
@@ -128,9 +170,9 @@
           <div class="buttons">
 
             <div class="btn quantity-button">
-              <img class="minus-icon" src="images/icon-minus.svg" alt="">
+              <img class="icon minus-icon" src="images/icon-minus.svg" alt="">
               <div class="quantity">1</div>
-              <img class="plus-icon" src="images/icon-plus.svg" alt="">
+              <img class="icon plus-icon" src="images/icon-plus.svg" alt="">
             </div>
 
             <button class="btn addtocart-button">
@@ -163,13 +205,13 @@
               
           </div>
 
-            <div class="main-dot-container">
+          <div class="main-dot-container">
 
-              <img class="product-img main-img main-img--hidden main-img--hidden--active" src="images/image-product-1.jpg" alt="">
+            <img class="product-img main-img main-img--hidden main-img--hidden--active" src="images/image-product-1.jpg" alt="">
 
-              <div class="dot"></div>
+            <div class="dot"></div>
 
-            </div>
+          </div>
             
         </div>
             
@@ -184,7 +226,9 @@
     
       </div>
 
+  <script src="js/scriptquery.js"></script>
   <script src="js/script.js"></script>
+
 </body>
 </html>
 

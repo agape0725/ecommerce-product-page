@@ -335,22 +335,21 @@ cartIcon.addEventListener('click', function (e) {
     cartDiv.classList.remove('my_cart_div--active');
     cartNotification.classList.remove('cart_icon_container--active');
   }
+
 })
 
 addedDeleteIcon.addEventListener('click', function(e) {
 
-    addedNone.classList.add('display_none--active');
-    cartDiv.classList.add('my_cart_div--active');
+  addedNone.classList.add('display_none--active');
+  cartDiv.classList.add('my_cart_div--active');
 
 })
 
 // H.Add Checkout Click
 
 checkoutButton.addEventListener('click', function(e) {
+
   checkoutButton.textContent = 'Purchased';
   checkoutButton.style.opacity = '0.7'; 
-  checkoutButton.style.cursor = 'not-allowed';
-
-  addedNone.classList.add('display_none--active-delay');
-  cartDiv.classList.add('my_cart_div--active-delay');
+  checkoutButton.style.cursor = 'default';
 })
