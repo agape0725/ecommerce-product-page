@@ -15,6 +15,7 @@ const nav = document.querySelector('.nav');
 const smallImagesContainer = document.querySelector(`.small_images_container`);
 const smallImages = document.querySelectorAll(`.small-img`);
 const mainImage = document.querySelector(`.main-img`);
+const mainImageOat = document.querySelector(`#main-image-oat`)
 
 //Variables for Right Column Increment or Decrement Quantity 
 
@@ -102,7 +103,7 @@ nav.addEventListener('mouseout', function (e) {
 
 // Left Column Navigation //  // Left Column Navigation //  // Left Column Navigation // 
 
-// Left.Col Image Clicked, Open Modal.
+// Left.Col Open Modal when Image is Clicked
 
 leftColumn.addEventListener('click', function (e) {
   
@@ -145,6 +146,8 @@ smallImagesContainer.addEventListener('mouseover', function (e) {
   })
 
 })
+
+// Left.Col Zoom image for the Main Image Product 
 
 // Right Column Navigation //  // Right Column Navigation //  // Right Column Navigation // 
 

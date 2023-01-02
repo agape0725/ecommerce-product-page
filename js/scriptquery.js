@@ -33,15 +33,15 @@ burgerIcon.addEventListener('click', function (e) {
 
 const slideUpdate = function(update) {
   slide.forEach((s, index) => {
-    s.style.transform = `translateX(${38 * (index - update)}rem)`
+    s.style.transform = `translateX(${100 * (index - update)}%)`
   })
 }
 
 slideUpdate(0);
 
-// Next Button FQ
+// Next Slide
 
-fqNextButton.addEventListener('click', function(e) {
+const nextSlide = function() {
   if (fqCurrentSlide === fqMaxSlide) {
     fqCurrentSlide = 0;
   } else {
@@ -50,13 +50,11 @@ fqNextButton.addEventListener('click', function(e) {
 
   slideUpdate(fqCurrentSlide);
   fqActivateDots(fqCurrentSlide);
-  console.log(fqCurrentSlide);
+}
 
-})
+// Previous Slide 
 
-// Previous Button FQ
-
-fqPrevButton.addEventListener('click', function(e) {
+const prevSlide = function() {
   if (fqCurrentSlide === 0) {
     fqCurrentSlide = fqMaxSlide;
   } else {
@@ -65,9 +63,31 @@ fqPrevButton.addEventListener('click', function(e) {
 
   slideUpdate(fqCurrentSlide);
   fqActivateDots(fqCurrentSlide);
-  console.log(fqCurrentSlide);
 
-})
+}
+
+// Navigate Next and Previous slide using button click
+
+fqNextButton.addEventListener('click', nextSlide)
+fqPrevButton.addEventListener('click', prevSlide)
+
+// Navigate Next and Previous slide using arrow keys
+
+const arrowKeysNextPrev = function() {
+  document.addEventListener('keydown', function(e) {
+        
+    if (e.key === 'ArrowRight') {
+      nextSlide();
+    }
+
+    if (e.key === 'ArrowLeft') {
+      prevSlide();
+    }
+    
+  })
+}
+
+arrowKeysNextPrev();
 
 //Created Dots FQ
 
@@ -109,4 +129,32 @@ fqDotsContainer.addEventListener('click', function (e) {
   slideUpdate(slideDot.dataset.dotForquery);
 
 })
+
+
+
+// const productImageOption = {
+//   root: null,
+//   threshold: 1,
+// }
+
+// const productImageObserver = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+
+//     if (entry.isIntersecting) {
+//       console.log('true');
+//       arrowKeysNextPrev();
+//     } else {
+//       console.log('false');
+      
+//     }
+
+//   })  
+// }, productImageOption)
+
+// const header = document.querySelector('header');
+
+// productImageObserver.observe(header);
+
+
+
 

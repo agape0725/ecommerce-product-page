@@ -78,8 +78,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: relative;
- 
+  /* position: absolute; */
+  /* min-width: 40%; */
   margin: auto;
 }
 
@@ -149,7 +149,7 @@ header {
   display: block;
   cursor: pointer;
   margin-right: 50px;
-  position: relative;
+  /* position: relative; */
   /* z-index: 99; */
 }
 
@@ -160,7 +160,6 @@ header {
 .cart_icon_container::before {
   content: '1';
   position: absolute;
-  /* right: 0; */
   color: var(--n-white);
   border-radius: 5px;
 
@@ -213,7 +212,8 @@ header {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   overflow: hidden;
   margin: auto;
-  transform: translate(-190px, 15px);
+  right: 0;
+  transform: translate(-50px, 10px);
 }
 
 .my_cart_container--active {
@@ -457,6 +457,19 @@ header {
   /* position: absolute;
   overflow: hidden; */
   margin-right: 8rem;
+}
+
+.image_magnifier_container {
+  position: relative;
+  width: 50%;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid black;
+  cursor: none;
+  height: 150px;
+  width: 150px;
 }
 
 /* Left Column */ /* Images */
@@ -827,7 +840,7 @@ header {
 
 /* Media Queries */ /* Media Queries */ /* Media Queries */
 
-@media all and (max-width: 600px) {
+@media all and  (min-width: 320px) and (max-width: 768px)  {
 
 /* Reveal Burger Icon in <= 600px */
 
@@ -837,9 +850,23 @@ header {
   }
 
   .nav {
-    justify-content: space-between;
-    max-width: 90%;
+    width: 95%;
+    position: relative;
+    /* justify-content: center; */
   }
+
+  /* .nav__header {
+  position: relative;
+  padding: 45px 0;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin: auto;
+    } */
 
   .nav_left {
     justify-content: space-between;
@@ -855,7 +882,7 @@ header {
   }
 
   .cart-icon {
-    margin: 0 30px;
+    margin: 0 20px;
   }
 
 /* Section  */
@@ -932,7 +959,6 @@ header {
 
   .slider {
     display: block;
-
     max-width: 100%;
     height: 26rem;
     position: relative;
@@ -1034,8 +1060,19 @@ header {
 
 /* Hidden for Query*/
 
+  .addtocart_navigation {
+    /* position: fixed; */
+    margin: auto;
+  }
+
   .my_cart_container {
-    transform: translate(-235px, 20px);
+    transform: translate(50px, 25px);
+  }
+
+  .cart_icon_container::before {
+    right: 10px;
+    bottom: 15px;
+    transform: translate(0, 0);
   }
 
 }
